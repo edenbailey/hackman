@@ -1,0 +1,55 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="+QBQ_e3$M(:mo`Hjj-vv">mySprite</variable><variable type="KIND_SpriteKind" id="Xz6-yMTWi[i-!#,4Cp6i">Player</variable><variable type="KIND_SpriteKind" id="(m#y.JsZ+nO,5~mn|YjQ">Projectile</variable><variable type="KIND_SpriteKind" id="1^sHrd|}0)rr~poMIN(7">Food</variable><variable type="KIND_SpriteKind" id="j2{f:qnR3{`Ogu_v#*45">Enemy</variable><variable type="BLOCKLY_TILESET_TYPE" id="[@sG2~1DD]_?Q:0sHZH:">0;16;16;0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</variable><variable type="BLOCKLY_TILESET_TYPE" id="%/.yk9JT]Jt3N2^{=O@d">1;16;16;7777777777777777070000000000007007070000000070700700000000000070070000000000007007000000000000700700000000000070070000000000007007000000000000700700000000000070070000000000007007000000000000700700000000000070070700000000707007000000000000707777777777777777</variable><variable type="BLOCKLY_TILESET_TYPE" id="yQ%K=K5pYsO7a]ryYF(G">2;16;16;0000000000000000707070077770077770707007777007777070700777700777000000000000000007070707777070070707070777707007070707077770700700000000000000000707777070070707070777707007070707077770700707070000000000000000777070700777700777707070077770077770707007777007</variable><variable type="BLOCKLY_TILESET_TYPE" id="?gdDq)AMODCw%~T0:;1:">3;16;16;7777777777777777070000000000007007070000000070700700000000000070070077777777007007000700007000700700070000700070070007200270007007000720027000700700070000700070070007000070007007007777777700700700000000000070070700000000707007000000000000707777777777777777</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="game_dialog_set_frame"><value name="frame"><shadow type="dialog_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . . 
+. 7 7 . 7 . 7 . 7 7 . 7 . 7 . 7 7 
+. 7 7 . 7 . 7 . 7 7 . 7 . 7 . 7 7 
+. 7 7 . 7 . 7 . 7 7 . 7 . 7 . 7 7 
+. . . . . . . . . . . . . . . . . 
+. 7 . 7 7 . . . . . . . . . . . . 
+. 7 . 7 7 . . . . . . . . . . . . 
+. 7 . 7 7 . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . 
+. 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+. 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+. 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+. . . . . . . . . . . . . . . . . 
+`</field></shadow></value><next><block type="game_show_long_text"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text"><field name="TEXT">owehfl</field></shadow></value><next><block type="variables_set"><field name="VAR" id="+QBQ_e3$M(:mo`Hjj-vv">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . 2 2 2 . . . . . 
+. . . 2 2 . 2 . 2 2 . . . 
+. . 2 . . . 2 . . . 2 . . 
+. 2 . . . . 2 . . . . 2 . 
+. 2 . . . 2 2 2 . . . 2 . 
+2 . . . 2 . . . 2 . . . 2 
+2 2 2 2 2 . . . 2 2 2 2 2 
+2 . . . 2 . . . 2 . . . 2 
+. 2 . . . 2 2 2 . . . 2 . 
+. 2 . . . . 2 . . . . 2 . 
+. . 2 . . . 2 . . . 2 . . 
+. . . 2 2 . 2 . 2 2 . . . 
+. . . . . 2 2 2 . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="+QBQ_e3$M(:mo`Hjj-vv">mySprite</field></block></value><value name="vx"><shadow type="math_number"><field name="NUM">50</field></shadow></value><value name="vy"><shadow type="math_number"><field name="NUM">50</field></shadow></value><next><block type="tilemap_editor"><field name="tilemap">tiles.createTilemap(
+            hex`1000100001010101010101010100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001010101030101010100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000`,
+            img`
+2 2 2 2 2 2 2 2 2 . . . . . . . 
+2 . . . . . . . 2 . . . . . . . 
+2 . . . . . . . 2 . . . . . . . 
+2 . . . . . . . 2 . . . . . . . 
+2 . . . . . . . 2 . . . . . . . 
+2 . . . . . . . 2 . . . . . . . 
+2 2 2 2 2 2 2 2 2 . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`,
+            [myTiles.tile0,myTiles.tile1,myTiles.tile2,myTiles.tile3],
+            TileScale.Sixteen
+        )</field><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="+QBQ_e3$M(:mo`Hjj-vv">mySprite</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">72</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">56</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
